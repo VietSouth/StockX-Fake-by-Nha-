@@ -1,0 +1,4890 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.app {
+    width: 99vw;
+    height: 293rem;
+}
+
+.header {
+    z-index: 1000;
+    width: 99vw;
+    height: 6rem;
+    border: rgb(236, 230, 230) solid 1px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.header__logo {
+    position: relative;
+    top: 1.5rem;
+    left: 3rem;
+    width: 9rem;
+    height: 5rem;
+}
+
+.header__logo-img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Phan input */
+
+.header__input-box {
+    position: relative;
+    left: 3rem;
+    width: auto;
+    height: 3rem;
+    align-items: center;
+    display: flex;
+}
+
+.header__finding-icon {
+    position: relative;
+    left: 2.5rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+}
+
+.header__finding-icon:hover {
+    cursor: pointer;
+}
+
+.header__input {
+    box-sizing: border-box;
+    padding-left: 3rem;
+    width: 40rem;
+    height: 3rem;
+    border: #cfcfcf solid 0.1rem;
+    font-size: 1rem;
+}
+
+.header__x-icon {
+    position: relative;
+    right: 2rem;
+    font-size: 1.5rem;
+    color: red;
+    background: none;
+    border: none;
+}
+
+.header__x-icon:hover {
+    cursor: pointer;
+}
+
+
+/* Phan list */
+
+.header__list-box {
+    position: relative;
+    left: 4rem;
+}
+
+.header__list-items {
+    display: flex;
+    align-items: center;
+}
+
+.header__items {
+    position: relative;
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.header__items-box {
+    background: #393939;
+    padding: 0.7rem 1rem;
+    transition: 0.1s;
+}
+
+.header__items-box:hover {
+    background: black;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.header__items-box:last-child {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background: unset;
+    border: black solid 1px;
+    position: relative;
+    right: 1rem;
+}
+
+.header__items-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.header-items-spec-text-1 {
+    color: white;
+}
+
+.header-items-spec-text-2 {
+    color: black;
+}
+
+
+/* Phan hover ra cua Browse */
+
+.items-effect-1::after {
+    position: absolute;
+    top: 1rem;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2rem;
+}
+
+.Browse__list-box {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    top: 150%;
+    right: 3%;
+    width: 8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Browse__list-items {
+    display: inline;
+}
+
+.Browse-items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+}
+
+.Browse-items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+}
+
+
+/* phan hien ra cua Sneaker nam trong Browse */
+
+.sneakers__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    transition: 0.2s;
+}
+
+.sneakers__list-items {
+    display: inline;
+}
+
+.sneakers__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.sneakers__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan hien ra cua Nike nam trong Sneakers */
+
+.nike__list-box {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 10rem;
+    height: 30rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.nike__list-items {
+    display: inline;
+}
+
+.nike__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    box-sizing: border-box;
+    transition: 0.2s;
+    transition: 0.1s;
+}
+
+.nike__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Sneaker-nike */
+
+.items-effect-1:hover .Browse__list-box {
+    display: block;
+}
+
+.Browse-items-1:hover .sneakers__list-box {
+    display: block;
+    transition: 0.2s;
+}
+
+.sneakers__items-1:hover .nike__list-box {
+    display: block;
+}
+
+
+/* Phan adidas */
+
+.adidas__list-box {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 10rem;
+    height: 30rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.adidas__list-items {
+    display: inline;
+}
+
+.adidas__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    transition: 0.1s;
+    Color: #242424;
+}
+
+.adidas__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Sneaker-adidas*/
+
+.sneakers__items-2:hover .adidas__list-box {
+    display: block;
+}
+
+
+/* Phan Reebok */
+
+.reebok__list-box {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 10rem;
+    height: 30rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.reebok__list-items {
+    display: inline;
+}
+
+.reebok__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.reebok__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Sneaker-reebok*/
+
+.sneakers__items-3:hover .reebok__list-box {
+    display: block;
+}
+
+
+/* Phan aj */
+
+.aj__list-box {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 12rem;
+    height: 30rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.aj__list-items {
+    display: inline;
+}
+
+.aj__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.aj__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Sneaker-aj*/
+
+.sneakers__items-4:hover .aj__list-box {
+    display: block;
+}
+
+
+/* Phan nb */
+
+.nb__list-box {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 12rem;
+    height: 30rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.nb__list-items {
+    display: inline;
+}
+
+.nb__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.nb__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Sneaker-nb*/
+
+.sneakers__items-5:hover .nb__list-box {
+    display: block;
+}
+
+
+/* Phan lux */
+
+.lux__list-box {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 12rem;
+    height: 30rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.lux__list-items {
+    display: inline;
+}
+
+.lux__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.lux__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Sneaker-lux*/
+
+.sneakers__items-6:hover .lux__list-box {
+    display: block;
+}
+
+
+/* Phan collection */
+
+.clt__list-box {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 11rem;
+    height: 19.4rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.clt__list-items {
+    display: inline;
+}
+
+.clt__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.clt__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Sneaker-collection*/
+
+.sneakers__items-7:hover .clt__list-box {
+    display: block;
+}
+
+
+/* Phan sneaker other */
+
+.other__list-box {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 11rem;
+    height: 19.4rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.other__list-items {
+    display: inline;
+}
+
+.other__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.other__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Sneaker-other*/
+
+.sneakers__items-8:hover .other__list-box {
+    display: block;
+}
+
+
+/* ////////////////////////////////////////////// */
+
+
+/* phan hien ra cua Electronics nam trong Browse */
+
+.Electronics__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 14rem;
+    height: 36.6rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    transition: 0.2s;
+}
+
+.Electronics__list-items {
+    display: inline;
+}
+
+.Electronics__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Electronics__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan hien ra cua Apple nam trong Electronics */
+
+.Apple__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.Apple__list-items {
+    display: inline;
+}
+
+.Apple__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Apple__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua electronics-Apple */
+
+.Browse-items-2:hover .Electronics__list-box {
+    display: block;
+    transition: 0.2s;
+}
+
+.Electronics__items-1:hover .Apple__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua AMD nam trong Electronics */
+
+.AMD__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 36.6rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.AMD__list-items {
+    display: inline;
+}
+
+.AMD__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.AMD__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua electronics-Apple */
+
+.Electronics__items-2:hover .AMD__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua NVIDIA nam trong Electronics */
+
+.NVIDIA__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 36.6rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.NVIDIA__list-items {
+    display: inline;
+}
+
+.NVIDIA__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.NVIDIA__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua electronics-Apple */
+
+.Electronics__items-3:hover .NVIDIA__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua Nitendo nam trong Electronics */
+
+.Nitendo__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 36.6rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.Nitendo__list-items {
+    display: inline;
+}
+
+.Nitendo__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Nitendo__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua electronics-Nitendo  */
+
+.Electronics__items-4:hover .Nitendo__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua PS nam trong Electronics */
+
+.PS__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 36.6rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.PS__list-items {
+    display: inline;
+}
+
+.PS__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.PS__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua electronics-Nitendo  */
+
+.Electronics__items-5:hover .PS__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua VG nam trong Electronics */
+
+.VG__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 36.6rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.VG__list-items {
+    display: inline;
+}
+
+.VG__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.VG__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua electronics-Nitendo  */
+
+.Electronics__items-6:hover .VG__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua xbox nam trong Electronics */
+
+.xbox__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 36.6rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.xbox__list-items {
+    display: inline;
+}
+
+.xbox__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.xbox__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua electronics-xbox  */
+
+.Electronics__items-7:hover .xbox__list-box {
+    display: block;
+}
+
+
+/* phan hien ra cua Streetwears nam trong Browse */
+
+.StreetWears__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 14rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    transition: 0.2s;
+}
+
+.StreetWears__list-items {
+    display: inline;
+}
+
+.StreetWears__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.StreetWears__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Streetwear trong browse */
+
+.Browse-items-4:hover .StreetWears__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua AM nam trong StreetWears */
+
+.AM__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 36.6rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.AM__list-items {
+    display: inline;
+}
+
+.AM__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.AM__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-AM */
+
+.Browse-items-2:hover .StreetWears__list-box {
+    display: block;
+    transition: 0.2s;
+}
+
+.StreetWears__items-1:hover .AM__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua BAPE nam trong StreetWears */
+
+.BAPE__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.BAPE__list-items {
+    display: inline;
+}
+
+.BAPE__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.BAPE__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-Apple */
+
+.StreetWears__items-2:hover .BAPE__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua CH nam trong StreetWears */
+
+.CH__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.CH__list-items {
+    display: inline;
+}
+
+.CH__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.CH__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-Apple */
+
+.StreetWears__items-3:hover .CH__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua DH nam trong StreetWears */
+
+.DH__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.DH__list-items {
+    display: inline;
+}
+
+.DH__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.DH__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-DH  */
+
+.StreetWears__items-4:hover .DH__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua EM nam trong StreetWears */
+
+.EM__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.EM__list-items {
+    display: inline;
+}
+
+.EM__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.EM__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-EM  */
+
+.StreetWears__items-5:hover .EM__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua ET nam trong StreetWears */
+
+.ET__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.ET__list-items {
+    display: inline;
+}
+
+.ET__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.ET__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-ET  */
+
+.StreetWears__items-6:hover .ET__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua FOG nam trong StreetWears */
+
+.FOG__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.FOG__list-items {
+    display: inline;
+}
+
+.FOG__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.FOG__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-FOG  */
+
+.StreetWears__items-7:hover .FOG__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua Kaws nam trong StreetWears */
+
+.Kaws__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.Kaws__list-items {
+    display: inline;
+}
+
+.Kaws__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.Kaws__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-Kaws  */
+
+.StreetWears__items-8:hover .Kaws__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua Nera nam trong StreetWears */
+
+.Nera__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.Nera__list-items {
+    display: inline;
+}
+
+.Nera__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.Nera__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-Nera  */
+
+.StreetWears__items-9:hover .Nera__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua NA nam trong StreetWears */
+
+.NA__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+    overflow: hidden;
+}
+
+.NA__list-items {
+    display: inline;
+}
+
+.NA__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.NA__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-NA  */
+
+.StreetWears__items-10:hover .NA__list-box {
+    display: block;
+}
+
+
+/* Phan ket thuc cua StreetWears-Nera  */
+
+.StreetWears__items-9:hover .Nera__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua OW nam trong StreetWears */
+
+.OW__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.OW__list-items {
+    display: inline;
+}
+
+.OW__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.OW__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-OW  */
+
+.StreetWears__items-11:hover .OW__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua OW nam trong StreetWears */
+
+.PA__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.PA__list-items {
+    display: inline;
+}
+
+.PA__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.PA__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-PA  */
+
+.StreetWears__items-12:hover .PA__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua SUP nam trong StreetWears */
+
+.SUP__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.SUP__list-items {
+    display: inline;
+}
+
+.SUP__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.SUP__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-SUP  */
+
+.StreetWears__items-13:hover .SUP__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua YZ nam trong StreetWears */
+
+.YZ__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.YZ__list-items {
+    display: inline;
+}
+
+.YZ__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.YZ__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-YZ  */
+
+.StreetWears__items-14:hover .YZ__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua OTS nam trong StreetWears */
+
+.OTS__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 35rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.OTS__list-items {
+    display: inline;
+}
+
+.OTS__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.OTS__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua StreetWears-OTS  */
+
+.StreetWears__items-15:hover .OTS__list-box {
+    display: block;
+}
+
+
+/* /////////////// */
+
+
+/* phan hien ra cua TCards nam trong Browse */
+
+.TCard__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 14rem;
+    height: 19.5rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    transition: 0.2s;
+}
+
+.TCard__list-items {
+    display: inline;
+}
+
+.TCard__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.TCard__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua TCard trong browse */
+
+.Browse-items-4:hover .TCard__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua Sealed Boxes nam trong TCard */
+
+.Sboxes__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 20rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.Sboxes__list-items {
+    display: inline;
+}
+
+.Sboxes__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.Sboxes__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua TCard-Sboxes */
+
+.Browse-items-2:hover .TCard__list-box {
+    display: block;
+    transition: 0.2s;
+}
+
+.TCard__items-1:hover .Sboxes__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua Pokémon nam trong TCard */
+
+.Pokemon__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 20rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.Pokemon__list-items {
+    display: inline;
+}
+
+.Pokemon__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.Pokemon__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua TCard-Pokemon */
+
+.TCard__items-2:hover .Pokemon__list-box {
+    display: block;
+}
+
+
+/* ///////////////////////// */
+
+
+/* phan hien ra cua Collectibles nam trong Browse */
+
+.Collectibles__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 14rem;
+    height: 28rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    transition: 0.2s;
+}
+
+.Collectibles__list-items {
+    display: inline;
+}
+
+.Collectibles__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.Collectibles__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Streetwear trong browse */
+
+.Browse-items-5:hover .Collectibles__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua KAWS nam trong Collectibles */
+
+.KAWS__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.KAWS__list-items {
+    display: inline;
+}
+
+.KAWS__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.KAWS__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-KAWS */
+
+.Browse-items-2:hover .Collectibles__list-box {
+    display: block;
+    transition: 0.2s;
+}
+
+.Collectibles__items-1:hover .KAWS__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua Bearbrick nam trong Collectibles */
+
+.Bearbrick__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.Bearbrick__list-items {
+    display: inline;
+}
+
+.Bearbrick__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.Bearbrick__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-Bearbrick */
+
+.Collectibles__items-2:hover .Bearbrick__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua ArtP nam trong Collectibles */
+
+.ArtP__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 12rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.ArtP__list-items {
+    display: inline;
+}
+
+.ArtP__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.ArtP__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-ArtP */
+
+.Collectibles__items-3:hover .ArtP__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua LEGO nam trong Collectibles */
+
+.LEGO__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 12rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.LEGO__list-items {
+    display: inline;
+}
+
+.LEGO__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.LEGO__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-LEGO  */
+
+.Collectibles__items-4:hover .LEGO__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua KP nam trong Collectibles */
+
+.KP__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.KP__list-items {
+    display: inline;
+}
+
+.KP__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.KP__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-KP  */
+
+.Collectibles__items-5:hover .KP__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua AFigure nam trong Collectibles */
+
+.AFigure__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 16rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.AFigure__list-items {
+    display: inline;
+}
+
+.AFigure__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.AFigure__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-AFigure  */
+
+.Collectibles__items-6:hover .AFigure__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua DA nam trong Collectibles */
+
+.DA__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.DA__list-items {
+    display: inline;
+}
+
+.DA__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.DA__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-DA  */
+
+.Collectibles__items-7:hover .DA__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua TMurakami nam trong Collectibles */
+
+.TMurakami__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.TMurakami__list-items {
+    display: inline;
+}
+
+.TMurakami__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.TMurakami__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-TMurakami  */
+
+.Collectibles__items-8:hover .TMurakami__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua VAbloh nam trong Collectibles */
+
+.VAbloh__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.VAbloh__list-items {
+    display: inline;
+}
+
+.VAbloh__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.VAbloh__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-VAbloh  */
+
+.Collectibles__items-9:hover .VAbloh__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua SDekcs nam trong Collectibles */
+
+.SDekcs__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+    overflow: scroll;
+}
+
+.SDekcs__list-items {
+    display: inline;
+}
+
+.SDekcs__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.SDekcs__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-SDekcs  */
+
+.Collectibles__items-10:hover .SDekcs__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua CBooks nam trong Collectibles */
+
+.CBooks__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.CBooks__list-items {
+    display: inline;
+}
+
+.CBooks__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.CBooks__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-CBooks  */
+
+.Collectibles__items-11:hover .CBooks__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua Oartists nam trong Collectibles */
+
+.Oartists__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 12rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.Oartists__list-items {
+    display: inline;
+}
+
+.Oartists__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.Oartists__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-Oartists  */
+
+.Collectibles__items-12:hover .Oartists__list-box {
+    display: block;
+}
+
+
+/* Phan hien ra cua OCollectibles nam trong Collectibles */
+
+.OCollectibles__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 29rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    overflow: scroll;
+}
+
+.OCollectibles__list-items {
+    display: inline;
+}
+
+.OCollectibles__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+}
+
+.OCollectibles__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan ket thuc cua Collectibles-OCollectibles  */
+
+.Collectibles__items-13:hover .OCollectibles__list-box {
+    display: block;
+}
+
+
+/* Phan Handbag trong Browse */
+
+.Handbags__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 38.8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Browse-items-6:hover .Handbags__list-box {
+    display: block;
+}
+
+.Handbags__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Handbags__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+/* Phan LV nam trong Handbag */
+
+.LV__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 38.8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.LV__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.LV__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Handbags__items-1:hover .LV__list-box {
+    display: block;
+}
+
+
+/* Phan Gucci nam trong Handbag */
+
+.GC__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 38.8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.GC__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.GC__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Handbags__items-2:hover .GC__list-box {
+    display: block;
+}
+
+
+/* Phan Chanel nam trong Handbag */
+
+.Chanel__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 38.8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    solid 0.1rem;
+    background: white;
+}
+
+.Chanel__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Chanel__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Handbags__items-3:hover .Chanel__list-box {
+    display: block;
+}
+
+
+/* Phan Goyard nam trong Handbag */
+
+.Goyard__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 38.8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Goyard__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Goyard__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Handbags__items-4:hover .Goyard__list-box {
+    display: block;
+}
+
+
+/* Phan Dior nam trong Handbag */
+
+.Dior__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 38.8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Dior__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Dior__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Handbags__items-5:hover .Dior__list-box {
+    display: block;
+}
+
+
+/* Phan Balenciaga nam trong Handbag */
+
+.Balen__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 38.8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Balen__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Balen__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Handbags__items-6:hover .Balen__list-box {
+    display: block;
+}
+
+
+/* Phan Hermes nam trong Handbag */
+
+.Hermes__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 38.8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Hermes__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Hermes__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Handbags__items-7:hover .Hermes__list-box {
+    display: block;
+}
+
+
+/* Phan Prada nam trong Handbag */
+
+.Prada__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 38.8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Prada__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Prada__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Handbags__items-8:hover .Prada__list-box {
+    display: block;
+}
+
+
+/* Phan JQmus nam trong Handbag */
+
+.JQmus__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 38.8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.JQmus__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.JQmus__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Handbags__items-9:hover .JQmus__list-box {
+    display: block;
+}
+
+
+/* Phan OtBrands nam trong Handbag */
+
+.OtBrands__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 38.8rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.OtBrands__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.OtBrands__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Handbags__items-10:hover .OtBrands__list-box {
+    display: block;
+}
+
+
+/* Phan Watches nam trong Browse */
+
+.Watches__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+    height: 34.5rem;
+}
+
+.Watches__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Watches__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Browse-items-7:hover .Watches__list-box {
+    display: block;
+}
+
+
+/* Phan Rolex nam trong Handbag */
+
+.Rolex__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 34.5rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Rolex__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Rolex__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Watches__items-1:hover .Rolex__list-box {
+    display: block;
+}
+
+
+/* Phan Casio nam trong Handbag */
+
+.Casio__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 34.5rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Casio__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Casio__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Watches__items-2:hover .Casio__list-box {
+    display: block;
+}
+
+
+/* Phan APwatch nam trong Handbag */
+
+.APwatch__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 34.5rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.APwatch__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.APwatch__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Watches__items-3:hover .APwatch__list-box {
+    display: block;
+}
+
+
+/* Phan Omega nam trong Handbag */
+
+.Omega__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 34.5rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Omega__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Omega__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Watches__items-4:hover .Omega__list-box {
+    display: block;
+}
+
+
+/* Phan Aupiguet nam trong Handbag */
+
+.Aupiguet__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 34.5rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Aupiguet__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Aupiguet__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Watches__items-5:hover .Aupiguet__list-box {
+    display: block;
+}
+
+
+/* Phan Panerai nam trong Handbag */
+
+.Panerai__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 34.5rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Panerai__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Panerai__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Watches__items-6:hover .Panerai__list-box {
+    display: block;
+}
+
+
+/* Phan Breitling nam trong Handbag */
+
+.Breitling__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 34.5rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Breitling__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Breitling__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Watches__items-7:hover .Breitling__list-box {
+    display: block;
+}
+
+
+/* Phan Cartier nam trong Handbag */
+
+.Cartier__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 34.5rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Cartier__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Cartier__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Watches__items-8:hover .Cartier__list-box {
+    display: block;
+}
+
+
+/* Phan IWC nam trong Handbag */
+
+.IWC__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 34.5rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.IWC__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.IWC__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Watches__items-9:hover .IWC__list-box {
+    display: block;
+}
+
+
+/* Phan Shinola nam trong Handbag */
+
+.Shinola__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 34.5rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.Shinola__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.Shinola__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Watches__items-10:hover .Shinola__list-box {
+    display: block;
+}
+
+
+/* Phan OWatchBrands nam trong Handbag */
+
+.OWatchBrands__list-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 13rem;
+    height: 34.5rem;
+    overflow: scroll;
+    border: rgb(233, 231, 231) solid 0.1rem;
+    background: white;
+}
+
+.OWatchBrands__items {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    Color: #242424;
+    transition: 0.1s;
+}
+
+.OWatchBrands__items:hover {
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.Watches__items-11:hover .OWatchBrands__list-box {
+    display: block;
+}
+
+
+/* Phần About nằm trên menu */
+
+.About__list-box {
+    z-index: 100;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    right: 3%;
+    display: flex;
+    width: 32rem;
+    height: 13.6rem;
+    background: white;
+    border: rgb(202, 202, 202) solid 1px;
+}
+
+.About-items-box {
+    display: inline;
+}
+
+.items-about-box {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    width: 15rem;
+    height: 3.5rem;
+    /* border: red solid 1px; */
+    align-items: center;
+    transition: 0.1s;
+}
+
+.items-about-box:hover {
+    background: rgb(236, 235, 235);
+    cursor: pointer;
+}
+
+.icon-items-about {
+    font-size: 1.5rem;
+}
+
+.items-icon {
+    width: 100%;
+}
+
+.items-description-box {}
+
+.items-name {
+    font-size: 0.9rem;
+    margin: 0.5rem 1rem;
+}
+
+.items-description {
+    font-size: 0.8rem;
+    margin: 0.5rem 1rem;
+    color: #a1a1a1;
+}
+
+.About-hr {
+    position: relative;
+    top: 1rem;
+    bottom: 1rem;
+    height: 12rem;
+    background: rgb(245, 243, 243);
+}
+
+.items-effect-2:hover .About__list-box {
+    visibility: visible;
+}
+
+
+/* ///////////////// */
+
+
+/* Body */
+
+
+/* Phan task bar cua body */
+
+.body {
+    width: 99vw;
+    height: 257.9rem;
+    position: relative;
+    /* border: blue solid 1px; */
+}
+
+.body__task-bar-box {
+    position: absolute;
+    top: 6rem;
+    width: 99vw;
+    height: 4rem;
+    line-height: 4rem;
+    align-items: center;
+    background: #f4f3f1;
+    text-align: center;
+}
+
+.task-bar-list {
+    display: flex;
+    margin-left: 18rem;
+}
+
+.task-bar-selection {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 1rem;
+}
+
+.task-bar-selection-link {
+    text-decoration: none;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body-poster-box {
+    position: absolute;
+    top: 11.7rem;
+    width: 80rem;
+    height: 30rem;
+    background: url(https://images.contentstack.io/v3/assets/blt818b0c67cf450811/blt60f9c9870bdb4dba/620ffa81d2952531f3cbef3b/Supreme_SS22_Season_Opening_-_Primary_Desktop.jpg?format=jpg&auto=webp&height=450);
+    background-repeat: no-repeat;
+}
+
+
+/* Phan pop sneakers */
+
+.most-pop-sneakers-box {
+    width: 1280px;
+    height: 30rem;
+    position: absolute;
+    top: 42rem;
+}
+
+.most-pop-header-box {
+    display: flex;
+    height: 2rem;
+    /* border: red solid 1px; */
+    justify-content: space-between;
+}
+
+.most-pop-sneakers-title-box {
+    display: flex;
+}
+
+.most-pop-sneakers-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.most-pop-sneakers-icon {
+    position: relative;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.most-pop-sneakers-icon::after {
+    position: absolute;
+    top: -1rem;
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.most-pop-sneakers-icon:hover .question-description-box {
+    display: block;
+}
+
+.question-description-box {
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    display: none;
+    position: absolute;
+    top: -400%;
+    left: -8rem;
+    width: 18rem;
+    height: 7rem;
+    border: rgb(204, 209, 204) solid 1px;
+    background: white;
+    border-radius: 0.5rem;
+}
+
+.more-most-pop-sneakers-box {
+    display: flex;
+    align-items: center;
+}
+
+.more-most-pop-sneakers-box:hover {
+    background: rgb(232, 238, 234);
+    cursor: pointer;
+}
+
+.more-most-pop-sneaker-text {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+    font-weight: 600;
+}
+
+.more-most-pop-sneaker-icon {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+}
+
+
+/* Phan list most pop sneakers */
+
+.most-pop-sneakers-list-box {
+    position: absolute;
+    top: 3rem;
+}
+
+.list-most-pop-sneaker {
+    display: flex;
+}
+
+.most-pop-sneakers {
+    list-style: none;
+    position: relative;
+    width: 11.55rem;
+    height: 16.6rem;
+    margin: 0 1rem;
+    border: rgb(224, 222, 222) solid 1px;
+    cursor: pointer;
+}
+
+.most-pop-sneakers:hover .most-pop-sneakers-img {
+    transform: translateY(-1rem) scale(1.1);
+    transition: 0.2s;
+}
+
+.most-pop-sneakers:first-child {
+    margin: unset;
+    margin-right: 1rem;
+}
+
+.most-pop-sneakers-img {
+    transition: 0.2s;
+    position: absolute;
+    top: 1rem;
+    left: 0.7rem;
+    width: 10rem;
+    height: 6rem;
+    /* border: blue solid 1px; */
+}
+
+.img-num-1 {
+    background: url(https://images.stockx.com/images/Air-Jordan-3-Retro-Cardinal-Red-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1643992778);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.img-num-2 {
+    background: url(https://images.stockx.com/images/Air-Jordan-5-Retro-Racer-Blue-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1644491795);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.img-num-3 {
+    background: url(https://images.stockx.com/images/Nike-Air-Force-1-Low-White-07_V2-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1631122839);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.img-num-4 {
+    background: url(https://images.stockx.com/images/Nike-Dunk-Low-Retro-White-Black-2021-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1633027409);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.img-num-5 {
+    background: url(https://images.stockx.com/images/Puma-MB01-LaMelo-Ball-Rick-and-Morty-1.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1645234827);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.img-num-6 {
+    background: url(https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Dark-Marina-Blue-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1642023273);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.most-pop-sneaker-name {
+    position: absolute;
+    top: 8rem;
+    padding: 0 0.5rem;
+    /* border: green solid 1px; */
+    box-sizing: border-box;
+}
+
+.most-pop-sneaker-ask-box {
+    position: absolute;
+    top: 11rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    color: rgb(133, 130, 130);
+    /* border: green solid 1px; */
+}
+
+.most-pop-sneakers-price {
+    position: absolute;
+    top: 12.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* border: green solid 1px; */
+}
+
+.most-pop-sneaker-sold {
+    position: absolute;
+    top: 14.5rem;
+    width: 6rem;
+    height: 1.5rem;
+    box-sizing: border-box;
+    margin: 0 0.5rem;
+    align-items: center;
+    display: flex;
+    background: rgb(233, 231, 231);
+    /* border: green solid 1px; */
+}
+
+.most-pop-sneaker-icon {
+    margin-left: 0.2rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 10rem;
+    background: green;
+}
+
+.most-pop-sneaker-amout {
+    margin-left: 0.2rem;
+    font-size: 1rem;
+}
+
+
+/* Phan Pop brands cua body */
+
+.body-pop-brands-box {
+    position: absolute;
+    top: 63rem;
+    width: 80rem;
+    /* border: red solid 1px; */
+}
+
+.pop-brands-title-box {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.pop-brands-list-box {
+    position: absolute;
+    top: 3rem;
+}
+
+.pop-brands-list {
+    display: flex;
+}
+
+.pop-brands {
+    list-style: none;
+    position: relative;
+    width: 15.2rem;
+    height: 10.2rem;
+    margin: 0 0.5rem;
+    /* border: rgb(232, 238, 234) solid 2px; */
+    cursor: pointer;
+}
+
+.pop-brands:hover .pop-brands-img {
+    transform: scale(1.2);
+    transition: 0.2s;
+    border: rgb(232, 238, 234) solid 2px;
+    z-index: 10000;
+}
+
+.pop-brands:first-child {
+    margin: unset;
+    margin-right: 0.5rem;
+}
+
+.pop-brands-img {
+    transition: 0.2s;
+}
+
+.brands-img-1 {
+    background: url(https://images.contentstack.io/v3/assets/blt818b0c67cf450811/bltbb91c212b5de4d8a/61561b6110d4154779bdba01/jordan.png?format=jpg&auto=webp&width=0.5);
+    width: 15rem;
+    height: 10.2rem;
+    background-repeat: no-repeat;
+}
+
+.brands-img-2 {
+    background: url(https://images.contentstack.io/v3/assets/blt818b0c67cf450811/blt02e2e8c84bc2b6f6/61561a71c3934450a14e395a/supreme_tile.png?format=jpg&auto=webp&width=0.5);
+    width: 15rem;
+    height: 10.2rem;
+    background-repeat: no-repeat;
+}
+
+.brands-img-3 {
+    background: url(https://images.contentstack.io/v3/assets/blt818b0c67cf450811/bltd17af3434fe765f4/61561a892b3bb345f7e7fae9/ps4.png?format=jpg&auto=webp&width=0.5);
+    width: 15rem;
+    height: 10.2rem;
+    background-repeat: no-repeat;
+}
+
+.brands-img-4 {
+    background: url(https://images.contentstack.io/v3/assets/blt818b0c67cf450811/blt9fd4296f268a90bb/61561b4310d4154779bdb9ff/yzy.png?format=jpg&auto=webp&width=0.5);
+    width: 15rem;
+    height: 10.2rem;
+    background-repeat: no-repeat;
+}
+
+.brands-img-5 {
+    background: url(https://images.contentstack.io/v3/assets/blt818b0c67cf450811/blt7680e1627e5b56e7/61561ba72b3bb345f7e7faed/lego.png?format=jpg&auto=webp&width=0.5);
+    width: 15rem;
+    height: 10.2rem;
+    background-repeat: no-repeat;
+}
+
+
+/* /////////////////////// */
+
+
+/* Phan trending Appeal */
+
+.Trending-Apparel-box {
+    width: 1280px;
+    height: 30rem;
+    position: absolute;
+    top: 78rem;
+}
+
+.Trending-Apparel-header-box {
+    display: flex;
+    width: 1280px;
+    height: 2rem;
+    /* border: red solid 1px; */
+    justify-content: space-between;
+}
+
+.Trending-Apparel-title-box {
+    display: flex;
+}
+
+.Trending-Apparel-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.Trending-Apparel-question-icon {
+    position: relative;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.Trending-Apparel-question-icon:hover .Trending-Apparel-question-description-box {
+    display: block;
+}
+
+.Trending-Apparel-question-description-box {
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    display: none;
+    position: absolute;
+    top: -8rem;
+    left: -8rem;
+    width: 18rem;
+    height: 7rem;
+    border: rgb(204, 209, 204) solid 1px;
+    background: white;
+    border-radius: 0.5rem;
+}
+
+.more-Trending-Apparel-box {
+    display: flex;
+    align-items: center;
+}
+
+.more-Trending-Apparel-box:hover {
+    background: rgb(232, 238, 234);
+    cursor: pointer;
+}
+
+.more-Trending-Apparel-text {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+    font-weight: 600;
+}
+
+.more-Trending-Apparel-icon {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+}
+
+.Trending-Apparel-list-box {
+    position: absolute;
+    top: 3rem;
+}
+
+.list-Trending-Apparel {
+    display: flex;
+}
+
+.Trending-Apparel {
+    list-style: none;
+    position: relative;
+    width: 11.55rem;
+    height: 16.6rem;
+    margin: 0 1rem;
+    border: rgb(224, 222, 222) solid 1px;
+    cursor: pointer;
+}
+
+.Trending-Apparel:hover .Trending-Apparel-img {
+    transform: scale(1.2) translateY(-0.5rem);
+    transition: 0.2s;
+}
+
+.Trending-Apparel:first-child {
+    margin: unset;
+    margin-right: 1rem;
+}
+
+.Trending-Apparel-img {
+    transition: 0.2s;
+    position: absolute;
+    top: 1rem;
+    left: 0.7rem;
+    width: 10rem;
+    height: 6rem;
+    /* border: blue solid 1px; */
+}
+
+.Trending-A-img-1 {
+    background: url(https://images.stockx.com/images/Juice-Wrld-x-Vlone-Butterfly-T-Shirt-White.png?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1608068137);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Trending-A-img-2 {
+    background: url(https://images.stockx.com/images/Yeezy-x-GAP-Hoodie-Black.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1632921114);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Trending-A-img-3 {
+    background: url(https://images.stockx.com/images/Juice-Wrld-x-Vlone-999-T-Shirt-Black.png?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1608068134);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Trending-A-img-4 {
+    background: url(https://images.stockx.com/images/Fear-of-God-Essentials-Core-Collection-Pullover-Hoodie-String.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1639003324);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Trending-A-img-5 {
+    background: url(https://images.stockx.com/images/Fear-of-God-Essentials-Core-Collection-Pullover-Hoodie-Stretch-Limo.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1639003324);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Trending-A-img-6 {
+    background: url(https://images.stockx.com/images/Yeezy-x-GAP-Hoodie-Blue.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1632921115);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Trending-Apparel-name {
+    position: absolute;
+    top: 8rem;
+    padding: 0 0.5rem;
+    /* border: green solid 1px; */
+    box-sizing: border-box;
+}
+
+.Trending-Apparel-ask-box {
+    position: absolute;
+    top: 11rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    color: rgb(133, 130, 130);
+    /* border: green solid 1px; */
+}
+
+.Trending-Apparel-price {
+    position: absolute;
+    top: 12.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* border: green solid 1px; */
+}
+
+.Trending-Apparel-sold {
+    position: absolute;
+    top: 14.5rem;
+    width: auto;
+    height: 1.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+    margin: 0 0.5rem;
+    align-items: center;
+    display: flex;
+    background: rgb(233, 231, 231);
+    /* border: green solid 1px; */
+}
+
+.Trending-Apparel-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 10rem;
+    background: green;
+    margin: 0 0.3rem;
+}
+
+.Trending-Apparel-amout {
+    font-size: 1rem;
+}
+
+
+/* /////////////// */
+
+
+/* Phan Featured-Products */
+
+.Featured-Products-box {
+    position: absolute;
+    top: 99rem;
+}
+
+.Featured-Products-header-box {
+    display: flex;
+    width: 1280px;
+    height: 2rem;
+    /* border: red solid 1px; */
+    justify-content: space-between;
+}
+
+.Featured-Products-title-box {
+    display: flex;
+}
+
+.Featured-Products-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.Featured-Products-question-icon {
+    position: relative;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.Featured-Products-question-description-box {
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    display: none;
+    position: absolute;
+    top: -8rem;
+    left: -8rem;
+    width: 18rem;
+    height: 7rem;
+    border: rgb(204, 209, 204) solid 1px;
+    background: white;
+    border-radius: 0.5rem;
+}
+
+.more-Featured-Products-box {
+    display: flex;
+    align-items: center;
+}
+
+.more-Featured-Products-box:hover {
+    background: rgb(232, 238, 234);
+    cursor: pointer;
+}
+
+.more-Featured-Products-text {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+    font-weight: 600;
+}
+
+.more-Featured-Products-icon {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+}
+
+.Featured-Products-list-box {
+    position: absolute;
+    top: 3rem;
+}
+
+.list-Featured-Products {
+    display: flex;
+}
+
+.Featured-Products {
+    list-style: none;
+    position: relative;
+    width: 11.55rem;
+    height: 16.7rem;
+    margin: 0 1rem;
+    border: rgb(224, 222, 222) solid 1px;
+    cursor: pointer;
+}
+
+.Featured-Products:hover .Featured-Products-img {
+    transform: scale(1.2) translateY(-0.5rem);
+    transition: 0.2s;
+}
+
+.Featured-Products:first-child {
+    margin: unset;
+    margin-right: 1rem;
+}
+
+.Featured-Products-img {
+    transition: 0.2s;
+    position: absolute;
+    top: 1rem;
+    left: 0.7rem;
+    width: 10rem;
+    height: 6rem;
+    /* border: blue solid 1px; */
+}
+
+.Featured-Products-img-1 {
+    background: url(https://images.stockx.com/360/Sony-PS5-Playstation-5-Blu-Ray-Edition-Console-White/Images/Sony-PS5-Playstation-5-Blu-Ray-Edition-Console-White/Lv2/img01.jpg?fm=avif&auto=compress&w=480&q=90&dpr=1&updated_at=1635746961&h=320);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Featured-Products-img-2 {
+    background: url(https://images.stockx.com/images/Sony-Playstation-5-Digital-Edition-Console-White.jpg?fit=fill&bg=FFFFFF&w=480&h=320&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1605716716);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.Featured-Products-img-3 {
+    background: url(https://images.stockx.com/images/Microsoft-Xbox-Series-X-Console-Black.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1605821255);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Featured-Products-img-4 {
+    background: url(https://images.stockx.com/images/NVIDIA-NVIDIA-GeForce-RTX-3080-Graphics-Card-Founders-Edition-5.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1640285295);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Featured-Products-img-5 {
+    background: url(https://images.stockx.com/images/Pokemon-TCG-25th-Anniversary-Celebrations-Ultra-Premium-Collection-Box.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1630695021);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Featured-Products-img-6 {
+    background: url(https://images.stockx.com/images/NVIDIA-Founders-GeForce-RTX-3070-Ti-900-1G143-2515-000.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1623095689);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Featured-Products-name {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 8rem;
+    padding: 0 0.5rem;
+    /* border: green solid 1px; */
+    box-sizing: border-box;
+}
+
+.Featured-Products-ask-box {
+    position: absolute;
+    top: 11rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    color: rgb(133, 130, 130);
+    /* border: green solid 1px; */
+}
+
+.Featured-Products-price {
+    position: absolute;
+    top: 12.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* border: green solid 1px; */
+}
+
+.Featured-Products-sold {
+    position: absolute;
+    top: 14.5rem;
+    width: auto;
+    height: 1.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+    margin: 0 0.5rem;
+    align-items: center;
+    display: flex;
+    background: rgb(233, 231, 231);
+    /* border: green solid 1px; */
+}
+
+.Featured-Products-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 10rem;
+    background: green;
+    margin: 0 0.3rem;
+}
+
+.Featured-Products-amout {
+    font-size: 1rem;
+}
+
+
+/* Phan poster-box */
+
+.body__poster-box {
+    position: absolute;
+    top: 121rem;
+    width: 99vw;
+    height: 30rem;
+    /* border: red solid 1px; */
+}
+
+.body__poster-box-son {
+    display: flex;
+}
+
+.body__poster {
+    height: 30rem;
+    cursor: pointer;
+}
+
+.body__poster:first-child {
+    width: 50rem;
+    height: 30rem;
+    background: url(https://images.contentstack.io/v3/assets/blt818b0c67cf450811/bltc1029863e8bebae3/621505d74f5b4c3317e6a43f/Perfect-Fit-AJ1-Dark-Marina-Blue_-_SecondaryA.jpg?format=jpg&auto=webp&height=438);
+    background-repeat: no-repeat;
+}
+
+.body__poster:last-child {
+    width: 32rem;
+    height: 30rem;
+    background: url(https://images.contentstack.io/v3/assets/blt818b0c67cf450811/bltd490c68b0f3a20e6/6216a1697f74be62edc4677e/SecondaryB.jpg?format=jpg&auto=webp&height=438);
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+
+
+/* Phan most viewed bags */
+
+.Most-Viewed-Bags-box {
+    position: absolute;
+    top: 150rem;
+}
+
+.Most-Viewed-Bags-header-box {
+    display: flex;
+    width: 1280px;
+    height: 2rem;
+    /* border: red solid 1px; */
+    justify-content: space-between;
+}
+
+.Most-Viewed-Bags-title-box {
+    display: flex;
+}
+
+.Most-Viewed-Bags-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.Most-Viewed-Bags-question-icon {
+    position: relative;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.Most-Viewed-Bags-question-description-box {
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    display: none;
+    position: absolute;
+    top: -8rem;
+    left: -8rem;
+    width: 18rem;
+    height: 7rem;
+    border: rgb(204, 209, 204) solid 1px;
+    background: white;
+    border-radius: 0.5rem;
+}
+
+.more-Most-Viewed-Bags-box {
+    display: flex;
+    align-items: center;
+}
+
+.more-Most-Viewed-Bags-box:hover {
+    background: rgb(232, 238, 234);
+    cursor: pointer;
+}
+
+.more-Most-Viewed-Bags-text {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+    font-weight: 600;
+}
+
+.more-Most-Viewed-Bags-icon {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+}
+
+.Most-Viewed-Bags-list-box {
+    position: absolute;
+    top: 3rem;
+}
+
+.list-Most-Viewed-Bags {
+    display: flex;
+}
+
+.Most-Viewed-Bags {
+    list-style: none;
+    position: relative;
+    width: 11.55rem;
+    height: 16.7rem;
+    margin: 0 1rem;
+    border: rgb(224, 222, 222) solid 1px;
+    cursor: pointer;
+}
+
+.Most-Viewed-Bags:hover .Most-Viewed-Bags-img {
+    transform: scale(1.2) translateY(-0.5rem);
+    transition: 0.2s;
+}
+
+.Most-Viewed-Bags:first-child {
+    margin: unset;
+    margin-right: 1rem;
+}
+
+.Most-Viewed-Bags-img {
+    transition: 0.2s;
+    position: absolute;
+    top: 1rem;
+    left: 0.7rem;
+    width: 10rem;
+    height: 6rem;
+    /* border: blue solid 1px; */
+}
+
+.Most-Viewed-Bags-img-1 {
+    background: url(https://images.stockx.com/images/Telfar-Shopping-Bag-Small-Red-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1643703138);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Most-Viewed-Bags-img-2 {
+    background: url(https://images.stockx.com/images/Telfar-Shopping-Bag-Small-Black-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1643702746);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.Most-Viewed-Bags-img-3 {
+    background: url(https://images.stockx.com/images/Telfar-Shopping-Bag-Medium-Black-V1.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1639761456);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Most-Viewed-Bags-img-4 {
+    background: url(https://images.stockx.com/images/Telfar-Shopping-Bag-Small-Corned-Beef.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1644525252);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Most-Viewed-Bags-img-5 {
+    background: url(https://images.stockx.com/images/Telfar-Shopping-Bag-Medium-Red-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1643296636);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Most-Viewed-Bags-img-6 {
+    background: url(https://images.stockx.com/images/Telfar-Shopping-Bag-Medium-Leaf.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1643143256);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Most-Viewed-Bags-name {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 8rem;
+    padding: 0 0.5rem;
+    /* border: green solid 1px; */
+    box-sizing: border-box;
+}
+
+.Most-Viewed-Bags-ask-box {
+    position: absolute;
+    top: 11rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    color: rgb(133, 130, 130);
+    /* border: green solid 1px; */
+}
+
+.Most-Viewed-Bags-price {
+    position: absolute;
+    top: 12.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* border: green solid 1px; */
+}
+
+.Most-Viewed-Bags-sold {
+    position: absolute;
+    top: 14.5rem;
+    width: auto;
+    height: 1.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+    margin: 0 0.5rem;
+    align-items: center;
+    display: flex;
+    background: rgb(233, 231, 231);
+    /* border: green solid 1px; */
+}
+
+.Most-Viewed-Bags-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 10rem;
+    background: green;
+    margin: 0 0.3rem;
+}
+
+.Most-Viewed-Bags-amout {
+    font-size: 1rem;
+}
+
+
+/* phan release calendar */
+
+.Release-Calendar-box {
+    position: absolute;
+    top: 171rem;
+}
+
+.Release-Calendar-header-box {
+    display: flex;
+    width: 1280px;
+    height: 2rem;
+    /* border: red solid 1px; */
+    justify-content: space-between;
+}
+
+.Release-Calendar-title-box {
+    display: flex;
+}
+
+.Release-Calendar-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.more-Release-Calendar-box {
+    display: flex;
+    align-items: center;
+}
+
+.more-Release-Calendar-box:hover {
+    background: rgb(232, 238, 234);
+    cursor: pointer;
+}
+
+.more-Release-Calendar-text {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+    font-weight: 600;
+}
+
+.more-Release-Calendar-icon {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+}
+
+.Release-Calendar-list-box {
+    position: absolute;
+    top: 3rem;
+}
+
+.list-Release-Calendar {
+    display: flex;
+}
+
+.Release-Calendar {
+    list-style: none;
+    position: relative;
+    width: 11.55rem;
+    height: 19rem;
+    margin: 0 1rem;
+    border: rgb(224, 222, 222) solid 1px;
+    cursor: pointer;
+}
+
+.Release-Calendar:hover .Release-Calendar-img {
+    transform: scale(1.2) translateY(-0.5rem);
+    transition: 0.2s;
+}
+
+.Release-Calendar:first-child {
+    margin: unset;
+    margin-right: 1rem;
+}
+
+.items-Release-Calendar-header-box {
+    display: flex;
+    position: relative;
+    top: 0.5rem;
+    width: 11.55rem;
+    align-items: center;
+}
+
+.Release-Calendar-day-box {
+    display: flex;
+    width: 100%;
+    height: 2em;
+    /* border: blue solid 1px; */
+    align-items: center;
+}
+
+.Release-Calendar-month {
+    font-size: 1.2rem;
+    position: relative;
+    margin: 0 0.3rem;
+}
+
+.Release-Calendar-month::after {
+    position: absolute;
+    content: "";
+    width: 0.2rem;
+    height: 1.5rem;
+    background: rgb(218, 215, 215);
+    margin: 0 0.4rem;
+}
+
+.Release-Calendar-day {
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+}
+
+.Release-Calendar-header-icon {
+    position: absolute;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    color: black;
+    transition: 0.1s;
+}
+
+.Release-Calendar-header-icon:hover {
+    transform: scale(1.3);
+    transition: 0.1s;
+}
+
+.Release-Calendar-img {
+    transition: 0.2s;
+    position: absolute;
+    top: 4rem;
+    left: 0.7rem;
+    width: 10rem;
+    height: 6rem;
+    /* border: blue solid 1px; */
+}
+
+.Release-Calendar-img-1 {
+    background: url(https://images.stockx.com/images/Nike-Dunk-Low-Green-Paisley-W.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1645063264);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Release-Calendar-img-2 {
+    background: url(https://images.stockx.com/images/Nike-Air-More-Uptempo-Summit-White-Black-Sail-W-Product.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1642764540);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.Release-Calendar-img-3 {
+    background: url(https://images.stockx.com/images/Air-Jordan-1-Low-Deep-Red-Blue-W.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1644954515);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Release-Calendar-img-4 {
+    background: url(https://images.stockx.com/images/New-Balance-550-Triple-Black-Product.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1643887400);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Release-Calendar-img-5 {
+    background: url(https://images.stockx.com/images/Air-Jordan-Why-Not-Zer05-Childhood.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1641400959);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.Release-Calendar-img-6 {
+    background: url(https://images.stockx.com/images/Nike-Air-Force-1-High-Boot-Crater-Dark-Smoke-Grey.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=avif&auto=compress&q=90&dpr=1&trim=color&updated_at=1638301253);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.Release-Calendar-name {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 10.5rem;
+    padding: 0 0.5rem;
+    /* border: green solid 1px; */
+    box-sizing: border-box;
+}
+
+.Release-Calendar-price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    top: 12.3rem;
+    /* border: red solid 1px; */
+}
+
+.Release-Calendar-price-icon {
+    position: absolute;
+}
+
+.price-Release-icon {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: rgb(37, 83, 47);
+}
+
+.Release-Calendar-price {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 1.8rem;
+    /* border: green solid 1px; */
+}
+
+.Release-Calendar-BID-Box {
+    position: absolute;
+    top: 16.5rem;
+    left: 0.5rem;
+    padding: 0.3rem 1rem;
+    background: black;
+    color: white;
+    font-weight: 600;
+    transition: 0.1s;
+    box-sizing: border-box;
+}
+
+.Release-Calendar-BID-Box:hover {
+    cursor: pointer;
+    background: rgb(56, 56, 56);
+    transition: 0.1s;
+}
+
+
+/* Phan last poster */
+
+.body-last-poster-line {
+    position: absolute;
+    top: 195rem;
+    width: 100%;
+    height: 29rem;
+    /* border: red solid 1px; */
+}
+
+.body-last-poster-box {
+    display: flex;
+    height: 29rem;
+}
+
+.body__last-poster-link {
+    text-decoration: none;
+}
+
+.body__last-poster-img {
+    height: 100%;
+    /* border: brown solid 1px; */
+    margin: 0 1rem;
+}
+
+.last-poster-img-1 {
+    width: 25rem;
+    height: 27.5rem;
+    background: url(https://images.contentstack.io/v3/assets/blt818b0c67cf450811/bltf3ca5d36691f145e/621cff83669c5d12b94690db/The_Rip_02-22-2022SecondaryB.jpg?format=jpg&auto=webp&height=438);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: unset;
+}
+
+.last-poster-img-2 {
+    width: 54rem;
+    height: 27rem;
+    background: url(https://images.contentstack.io/v3/assets/blt818b0c67cf450811/blta75acf6ea6522638/621d02952e34b63e0773fb3b/lego_batman_under_200_assetssecondarya_1_.jpg?format=jpg&auto=webp&height=438);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+/* Phan magazine */
+
+.Magazine-box {
+    position: absolute;
+    top: 223rem;
+}
+
+.Magazine-header-box {
+    display: flex;
+    width: 1280px;
+    height: 2rem;
+    /* border: red solid 1px; */
+    justify-content: space-between;
+}
+
+.Magazine-title-box {
+    display: flex;
+}
+
+.Magazine-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.Magazine-question-icon {
+    position: relative;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.Magazine-question-description-box {
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    display: none;
+    position: absolute;
+    top: -8rem;
+    left: -8rem;
+    width: 18rem;
+    height: 7rem;
+    border: rgb(204, 209, 204) solid 1px;
+    background: white;
+    border-radius: 0.5rem;
+}
+
+.more-Magazine-box {
+    display: flex;
+    align-items: center;
+}
+
+.more-Magazine-box:hover {
+    background: rgb(232, 238, 234);
+    cursor: pointer;
+}
+
+.more-Magazine-text {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+    font-weight: 600;
+}
+
+.more-Magazine-icon {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    color: #006340;
+}
+
+.Magazine-list-box {
+    position: absolute;
+    width: 1280px;
+    height: 32rem;
+    top: 2rem;
+    /* border: blue solid 1px; */
+    flex-wrap: wrap;
+}
+
+.list-Magazine {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* border: red solid 1px; */
+    flex-wrap: wrap;
+}
+
+.Magazine {
+    position: relative;
+    list-style: none;
+    width: 17.8rem;
+    height: 13.5rem;
+    border: rgb(221, 214, 214) solid 1px;
+    cursor: pointer;
+    margin: 1rem 1rem;
+    /* border: green solid 1px; */
+}
+
+.Magazine:hover .Magazine-img {
+    transform: translateY(-0.5rem);
+    transition: 0.2s;
+}
+
+.Magazine-img {
+    transition: 0.2s;
+    position: absolute;
+    width: 100%;
+    height: 17rem;
+    /* border: blue solid 1px; */
+}
+
+.Magazine-img-1 {
+    height: 9rem;
+    background: url(https://pbs.twimg.com/media/D4Zm446U4AEPnfC?format=jpg&name=large);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Magazine-img-2 {
+    height: 10rem;
+    background: url(https://kwietstorms.files.wordpress.com/2015/02/yeezy-adidas-banner1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Magazine-img-3 {
+    height: 9rem;
+    background: url(https://sneakernews.com/wp-content/uploads/2018/10/slam-magazine-jordans-vol-4-air-jordan-1-issue-0.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Magazine-img-4 {
+    height: 9rem;
+    background: url(https://media.gq.com/photos/619d7220f3b9613312e5a5b8/master/pass/ald-nb2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Magazine-img-5 {
+    height: 9rem;
+    background: url(https://drake.vn/image/catalog/H%C3%ACnh%20content/th%C6%B0%C6%A1ng-hi%C3%AA%CC%A3u-gia%CC%80y-Converse/thuong-hieu-giay-converse-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Magazine-img-6 {
+    height: 9rem;
+    background: url(https://lc-imageresizer-live-s.legocdn.com/resize/ll-magazine-2022-issue-1?width=1600&imageUrl=https%3A%2F%2Fwww.lego.com%2Fr%2Fwww%2Fr%2Fportals%2F-%2Fmedia%2Fimages%2Flego-life-2019%2Ffinal-assets%2Fmagazine-archive%2Farchive-thumbnails%2Fll-magazine-2022-issue-1.jpg%3Fl.r%3D-1386410470);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Magazine-img-7 {
+    height: 9rem;
+    background: url(https://i.mdel.net/i/db/2020/9/1381327/1381327-800w.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Magazine-img-8 {
+    height: 9rem;
+    background: url(https://cf.shopee.vn/file/a692ff39bfef8000b1ab3ad0ee660b3c);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Magazine-name {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    padding: 0 0.5rem;
+    /* border: green solid 1px; */
+    box-sizing: border-box;
+    font-family: Merriweather, Georgia, serif;
+}
+
+.Magazine-sour-box {
+    position: absolute;
+    top: 11.5rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+    color: rgb(167, 161, 161);
+}
+
+
+/* Phan footer */
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+    /* border: red solid 1px; */
+    top: 258rem;
+}
+
+.footer-line-1 {
+    position: absolute;
+    width: 100%;
+    height: 27rem;
+    background: #242424;
+}
+
+.footer__items-box {
+    /* position: absolute; */
+    /* border: blue solid 1px; */
+    margin: 2rem 0;
+    width: 1270px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title {
+    color: white;
+    font-size: 2rem;
+    font-family: Merriweather, Georgia, serif;
+}
+
+.footer__items-box:nth-child(2) {
+    display: flex;
+    top: 2rem;
+}
+
+.footer__items-list-box {
+    display: inline;
+    margin: 0 2.7rem;
+}
+
+.footer__items-list-box:first-child {
+    margin: unset;
+    margin-right: 0.5rem;
+}
+
+.footer__items-list {
+    display: inline;
+}
+
+.footer__items {
+    list-style: none;
+    margin: 0.5rem 0;
+    color: white;
+    font-size: 0.9rem;
+    /* border: red solid 1px; */
+}
+
+.footer__items:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer__items-effect {
+    font-weight: 700;
+}
+
+.footer__hr {
+    width: 1270px;
+    height: 0.2px;
+    background: white;
+}
+
+.footer__stockx-flatform-box {}
+
+.footer__stockx-flatform-box:nth-child(1) {
+    padding: 0.5rem 0.7rem;
+    width: 13rem;
+    height: 1.5rem;
+    border: white solid 1px;
+    transition: 0.1s;
+}
+
+.footer__stockx-flatform-box:nth-child(1):hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    transition: 0.1s;
+}
+
+.footer__stockx-flatform-box:nth-child(1):hover .footer__StockX-current-box {
+    color: black;
+    transition: 0.1s;
+}
+
+.footer__StockX-current-box {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+    transition: 0.1s;
+}
+
+.footer__stockx-flatform-box:nth-child(2) {
+    display: inline;
+}
+
+.footer__StockX-social-nework-title {
+    font-size: 1rem;
+    color: white;
+}
+
+.footer__StockX-social-nework-box {}
+
+.StockX-social-nework-icon-list {
+    display: flex;
+}
+
+.StockX-social-nework-icon {
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 0.3rem;
+}
+
+.StockX-social-nework-icon:hover {
+    cursor: pointer;
+}
+
+.footer__stockx-flatform-box:nth-child(3) {
+    display: inline;
+}
+
+.footer__stockx-flatform-title {
+    font-size: 1rem;
+    color: white;
+}
+
+.footer__stockx-flatform-box {}
+
+.stockx-flatform-icon-list {
+    display: flex;
+}
+
+.stockx-flatform-icon {
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 0.3rem;
+}
+
+.stockx-flatform-icon:hover {
+    cursor: pointer;
+}
+
+.footer__stockx-flatform-box:nth-child(4) {
+    display: inline;
+}
+
+.footer__stockx-Assistive-Technology-title {
+    font-size: 1rem;
+    color: white;
+}
+
+.footer__stockx-Assistive-Technology-box {}
+
+.stockx-Assistive-Technology-icon-list {
+    display: flex;
+}
+
+.stockx-Assistive-Technology-icon {
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 0.3rem;
+}
+
+.stockx-Assistive-Technology-icon:hover {
+    cursor: pointer;
+}
+
+.footer__stockx-flatform-box:last-child {
+    display: flex;
+    height: 1.5rem;
+    /* border: red solid 1px; */
+}
+
+.stockx-Proudly-Built-icon {
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 0.3rem;
+}
+
+.footer__stockx-Proudly-Built-title {
+    font-size: 1rem;
+    color: white;
+}
+
+.footer__stockx-Proudly-Built-title:hover {
+    border-bottom: white solid 1px;
+    cursor: pointer;
+}
+
+.footer-line-2 {
+    position: absolute;
+    top: 27rem;
+    width: 100%;
+    height: 8rem;
+    background: black;
+}
+
+.footer-line-2-box {
+    position: relative;
+    width: 1270px;
+    height: 10rem;
+    align-items: center;
+    /* border: blue solid 1px; */
+}
+
+.StockX-information-box {}
+
+.footer-line-2-policy-box {
+    position: absolute;
+    top: 2rem;
+    width: auto;
+    height: 2rem;
+    /* border: red solid 1px; */
+}
+
+.policy-list {
+    display: flex;
+}
+
+.policy {
+    position: relative;
+    font-size: 0.8rem;
+    list-style: none;
+    color: white;
+    margin: 0 0.5rem;
+}
+
+.policy::after {
+    position: absolute;
+    right: -0.5rem;
+    content: " ";
+    width: 1px;
+    height: 1.1rem;
+    background: white;
+}
+
+.policy:last-child::after {
+    display: none;
+}
+
+.policy:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-line-2-language-box {
+    position: absolute;
+    top: 4rem;
+    width: auto;
+    height: 2rem;
+    /* border: red solid 1px; */
+}
+
+.language-list {
+    display: flex;
+}
+
+.language {
+    position: relative;
+    font-size: 0.8rem;
+    list-style: none;
+    color: white;
+    margin: 0 0.4rem;
+}
+
+.language:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.StockX-information-box:last-child {
+    color: white;
+    position: absolute;
+    top: 3rem;
+    right: 7.6rem;
+    font-size: 0.8rem;
+    font-style: italic;
+}
